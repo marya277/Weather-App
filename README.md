@@ -8,7 +8,7 @@ Esta aplicación permite a los usuarios ingresar el nombre de una ciudad y obten
 
 ## Demo
 
-Puedes ver la aplicación en vivo en [Vercel](https://weather-app-five-teal-16.vercel.app/weather.html).
+Puedes ver la aplicación en vivo en [Vercel](https://weather-app-five-teal-16.vercel.app/).
 
 ## Tecnologías
 
