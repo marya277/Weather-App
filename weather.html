@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="">
+    <header id="weather-header"></header>
+        <div class="weather-header__container">
+            <div class="weather-header__title">WEATHER APP</div>
+        </div>
+    </header>
+    
+    <div class="app">
+        <div class="card card--weather">
+            <h2 class="">Buscar Ciudad</h2>
+            <form id="weatherForm" class="card__form">
+                <input id="cityInput" type="text" placeholder="Ingrese nombre de la ciudad" class="card__input" />
+                <button type="submit" id="searchBtn" class="card__button">Buscar</button>
+            </form>
+            <div id="errorMessage" class="card__error-message"></div>
+            <div id="weatherInfo" class="card__weather-info">
+                <!-- mostrando  información del clima -->
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="/script.js"></script>
+</body>
+</html>
