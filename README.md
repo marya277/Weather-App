@@ -6,6 +6,10 @@ Una aplicación simple para obtener el clima de una ciudad usando HTML, CSS, Jav
 
 Esta aplicación permite a los usuarios ingresar el nombre de una ciudad y obtener la información del clima actual, como la temperatura, la humedad y una descripción breve del clima, junto con un ícono representativo.
 
+## Demo
+
+Puedes ver la aplicación en vivo en [Vercel](https://weather-app-five-teal-16.vercel.app/weather.html).
+
 ## Tecnologías
 
 - **HTML**
