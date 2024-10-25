@@ -37,17 +37,19 @@ $(document).ready(function() {
                 $('#weatherInfo').html(`
                     <div class="card__weather-info-item slide-in">
                         <img src="img/termometer1.png" alt="Imagen de temperatura" class="card__image-temperature">
-                        <h3><strong>${cityName}</strong> ${temperature}°C</h3>
+                        <h3 class="weather-title" ><strong>${cityName}</strong> ${temperature}°C</h3>
                     </div>
                     <div class="card__weather-info-item slide-in">
                         <img src="img/humidity_vector.png" alt="Imagen de temperatura" class="card__image-humidity">
-                        <p><strong>Humedad:</strong> ${humidity}%</p>
+                        <p class="weather-description" ><strong>Humedad:</strong> ${humidity}%</p>
                     </div>
                     <div class="card__weather-info-item slide-in">
                         <img src="http://openweathermap.org/img/wn/${weatherIcon}.png" class="card__image-humidity" alt="Weather icon">
-                        <p><strong>Clima:</strong> ${weatherMain}</p>
+                        <p class="weather-description" ><strong>Clima:</strong> ${weatherMain}</p>
                     </div>
                 `);
+
+                $('#backBtn').show();
 
                 setTimeout(function() {
                     $('.slide-in').addClass('show');
@@ -56,6 +58,11 @@ $(document).ready(function() {
             .fail(function() {
                 $('#errorMessage').text('Ciudad no encontrada o ha ocurrido un error. Por favor intente de nuevo.');
                 $('#weatherInfo').empty(); 
+                $('#backBtn').hide();
             });
     }
+
+    $('#backBtn').click(function() {
+        window.location.href = 'index.html';
+    });
 });
